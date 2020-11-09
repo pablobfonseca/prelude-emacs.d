@@ -31,3 +31,5 @@ var/
 .cache/
 .lsp-session*
 magithub/cache
+.cache
+.lsp-session-v1

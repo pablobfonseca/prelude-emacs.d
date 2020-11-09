@@ -46,6 +46,10 @@
 
 ;; lsp
 (setq exec-path (append exec-path '("~/.config/nvm/12.18.3/bin")))
-(add-hook 'js2-mode-hook 'lsp)
-(add-hook 'css-mode-hook 'lsp)
-(add-hook 'web-mode-hook 'lsp)
+(setq read-process-output-max (* 1024 1024)) ;; 1mb
+(add-hook 'js2-mode-hook #'lsp)
+(add-hook 'typescript-mode-hook #'lsp)
+(add-hook 'css-mode-hook #'lsp)
+(add-hook 'web-mode-hook #'lsp)
+(add-hook 'python-mode-hook #'lsp)
+(add-hook 'elm-mode-hook #'lsp)
