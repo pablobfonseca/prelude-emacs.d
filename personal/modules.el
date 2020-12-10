@@ -30,13 +30,13 @@
   '(define-key company-active-map (kbd "C-c h") #'company-quickhelp-manual-begin))
 
 ;; ivy
-;; (setq ivy-initial-inputs-alist nil)
-;; (setq ivy-re-builders-alist
-;;       '((swiper . ivy--regex-plus)
-;;         (swiper-isearch . ivy--regex-plus)
-;;         (counsel-ag . ivy--regex-plus)
-;;         (counsel-rg . ivy--regex-plus)
-;;         (t . ivy--regex-fuzzy))) ;; enable fuzzy searching everywhere except for swiper and rg/ag
+(setq ivy-initial-inputs-alist nil)
+(setq ivy-re-builders-alist
+      '((swiper . ivy--regex-plus)
+        (swiper-isearch . ivy--regex-plus)
+        (counsel-ag . ivy--regex-plus)
+        (counsel-rg . ivy--regex-plus)
+        (t . ivy--regex-fuzzy))) ;; enable fuzzy searching everywhere except for swiper and rg/ag
 
 ;; web mode
 (defun my-web-mode-hook ()
