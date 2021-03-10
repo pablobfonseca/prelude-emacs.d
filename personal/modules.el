@@ -3,6 +3,12 @@
 ;; ripgrep
 (prelude-require-package 'ripgrep)
 
+;; evil-surround
+(global-evil-surround-mode 1)
+
+;; fzf
+(prelude-require-package 'fzf)
+
 ;; evil-matchit
 (prelude-require-package 'evil-matchit)
 (global-evil-matchit-mode 1)
@@ -45,7 +51,7 @@
 (add-hook 'web-mode-hook 'my-web-mode-hook)
 
 ;; lsp
-(setq exec-path (append exec-path '("~/.config/nvm/12.18.3/bin")))
+(setq exec-path (append exec-path '("~/.nvm/versions/node/v15.8.0/bin")))
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (add-hook 'js2-mode-hook #'lsp)
 (add-hook 'typescript-mode-hook #'lsp)

@@ -1,11 +1,5 @@
 ;; custom UI
 
-;; Remove scrollbar
-(scroll-bar-mode -1)
-
-;; Disable clipboard
-(setq select-enable-clipboard nil)
-
 ;; whitespace
 (setq prelude-whitespace nil)
 
